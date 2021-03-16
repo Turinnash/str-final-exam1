@@ -23,7 +23,5 @@ export class UserListComponent implements OnInit {
   deleteUser(user: User):void {
     this.userService.delete(user);
 
-
-}
-
+  }
 }

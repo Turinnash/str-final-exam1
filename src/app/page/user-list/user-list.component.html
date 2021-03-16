@@ -21,10 +21,10 @@
           <td>{{ user.active }}</td>
           <td>
             <div class="btn-group">
-              <button [routerLink]="['user/' + user.id]" class="btn btn-info">
+              <button [routerLink]="['user/' + user.id]" class="btn btn-info" rel="tooltip" title="Edit User">
                 <i class="fa fa-pencil"></i>
               </button>
-              <button class="btn btn-danger" (click)="deleteUser(user)">
+              <button class="btn btn-danger"(click)="deleteUser(user)" rel="tooltip" title="Remove User">
                 <i class="fa fa-trash"></i>
               </button>
             </div>
